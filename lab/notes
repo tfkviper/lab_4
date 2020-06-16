@@ -106,7 +106,7 @@ def delete_note(way:str,loggin:str):
         if list[0]=='txt':
             try:
                 os.remove(os.path.join(way,"Notes",command))#way+"\\"+"Notes"+'\\'+command)
-                print("Note succesfull delete")
+                print("Note succesfull deleted")
                 flag=False
             except FileNotFoundError:
                 print("Note not found")
@@ -118,7 +118,7 @@ def delete_note(way:str,loggin:str):
             command=command+'.txt'
             try:
                 os.remove(os.path.join(way,command))#way+'\\'+command)
-                print("Note sucesfull delete")
+                print("Note sucesfull deleted")
                 flag=False
             except FileNotFoundError:
                 print("Note not found ")
