@@ -32,7 +32,7 @@ def CreateAcc(way_for_sys_file:str):
     i=0
     while flag:
         try:
-            loggin=input("Pleas, enter your loggin >> ")
+            loggin=input("Please, enter your loggin >> ")
             if len(loggin)<1:
                 print("Incorrect loggin (too short), please, create new loggin")
             elif len(loggin)>100:
@@ -56,7 +56,7 @@ def CreateAcc(way_for_sys_file:str):
     flag=True
     while flag:
         try:
-            new_password=input("Pleas, write you new password >> ")
+            new_password=input("Please, write you new password >> ")
             if len(new_password)<=1:
                 print("Password too short, please, create new password")
             elif len(new_password)>30:
